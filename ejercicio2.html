@@ -18,7 +18,19 @@
 		//Escribe aquí tu código Javascript
 		console.log (document.getElementsByClassName("mensaje"));
 		var claseMensaje= document.getElementsByClassName("mensaje").length;
-		alert (claseMensaje);
+
+		function cantidadMensaje(){
+			if (claseMensaje==1){
+				alert ("1, Es muy poco")
+			}
+			else if(claseMensaje==2 && claseMensaje<4){
+				alert("No está mal")
+			}
+			else{
+				alert("Son muchos")
+			}
+		}
+			cantidadMensaje();
 	</script>
 </body>
 </html>
